@@ -19,9 +19,6 @@ which run different roles to install and configure SAP HANA and required applica
 
 ## Scenarios
 
-#### [HANA single-node instance](deploy/vm/modules/single_node_hana)
-- single-node HANA instance
-
 #### [HANA high-availability pair](deploy/vm/modules/ha_pair)
 - single-node HANA instance, two-tier [HSR](# "HANA System Replication") (primary/secondary)
 - Pacemaker high-availability cluster, fully configured with [SBD](# "STONITH by device") and SAP/Azure resource agents
