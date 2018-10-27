@@ -1,6 +1,4 @@
-# Automated SAP Deployments in Azure Cloud
-
-Master Branch's status: [![Build Status](https://travis-ci.org/Azure/sap-hana.svg?branch=master)](https://travis-ci.org/Azure/sap-hana)
+# Automated SAP Deployments in Azure Cloud using Availability Zones
 
 This repository contains a set of highly customizable templates that can be used to automatically deploy complex SAP landscapes in the Azure Cloud.
 The templates are split into:
@@ -8,9 +6,6 @@ The templates are split into:
 which deploy the infrastructure components (such as VMs, network, storage) in Azure and then call the:
 * **Ansible playbooks**
 which run different roles to install and configure SAP HANA and required applications on the already deployed infrastructure.
-
- ![image](https://raw.githubusercontent.com/Azure/sap-hana/5d2e36d4b80f13980e85af2bc67ff32819c14f8c/template-hapair.png)
- ![image](https://raw.githubusercontent.com/Azure/sap-hana/5d2e36d4b80f13980e85af2bc67ff32819c14f8c/shine-dashboard.png)
 
 ## Table of contents
 
@@ -84,7 +79,7 @@ In this simple example, we'll deploy a simple single-node SAP HANA instance (spe
 9. Change into the directory for the HANA single-node scenario:
 
     ```sh
-    cd sap-hana/deploy/vm/modules/single_node_hana/
+    cd sap-hana/deploy/vm/modules/ha_pair/
     ```
 
 10. Use a text editor to create a Terraform variables file `terraform.tfvars`, adapting the download URLs accordingly:
