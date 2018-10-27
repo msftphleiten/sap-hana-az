@@ -22,7 +22,9 @@ which run different roles to install and configure SAP HANA and required applica
 #### [HANA high-availability pair](deploy/vm/modules/ha_pair)
 - single-node HANA instance, two-tier [HSR](# "HANA System Replication") (primary/secondary)
 - Pacemaker high-availability cluster, fully configured with [SBD](# "STONITH by device") and SAP/Azure resource agents
+- deployed in Azure Availability Zones
 
+*(**Note**:please check if your region is available for Availability Zones
 
 ## Usage
 
